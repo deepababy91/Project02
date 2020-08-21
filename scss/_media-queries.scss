@@ -1,0 +1,20 @@
+/***************************
+media-queries
+***************************/
+
+/*320px/16=20em for mobile*/
+
+
+@mixin mobile {
+    @media only screen and (max-width :20em) {
+        @content;
+    }
+}
+
+/*1200px/16=75em for desktops*/
+
+@mixin desktop {
+    @media only screen and (min-width :75em) {
+        @content;
+    }
+}
