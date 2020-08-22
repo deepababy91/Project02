@@ -1,7 +1,7 @@
 /***************************
     Search
 ***************************/
- 
+ /*flex to ensure input field and submit button appear side by side for desktop view */
   .searcharea {
     margin-top:35px ;
     @include flexbox-display();
