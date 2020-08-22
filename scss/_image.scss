@@ -22,6 +22,10 @@ img{
   display:flex;
   align-items: center;
   justify-content: center;
+  &:hover{
+    opacity:.5;
+    transition: .9s;
+  }
   @include mobile{
     width:100%;
     padding:1rem;
