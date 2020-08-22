@@ -516,6 +516,7 @@ Nav Modules
 /***************************
 Image Modules
 ***************************/
+/*grid in css along with flex property for image display*/
 #outputarea {
   display: -ms-grid;
   display: grid;
@@ -564,6 +565,7 @@ img {
 /***************************
     Search
 ***************************/
+/*flex to ensure input field and submit button appear side by side for desktop view */
 .searcharea {
   margin-top: 35px;
   display: -moz-flex;
