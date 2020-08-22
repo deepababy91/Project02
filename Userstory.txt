@@ -1,0 +1,5 @@
+Project 02-User stories
+1)As a user , I want to see a navigation bar so that I can see the company name and can navigate to other pages
+2)As a user , I want to see a search bar so that I can search for any of the gifs and see gif images returning as results
+3)As a user, I want to see the giphy search website in both desktop and mobile phone view so that it is desktop friendly as well as mobile friendly
+
