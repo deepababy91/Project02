@@ -2,7 +2,8 @@
 
 
 $(document).ready(function () {
-  $('.fa-search').click(() => {
+  $('button').click(() => {
+    //to search without refreshing the page
     $('#outputarea').empty();
     let userInput = $('#search').val();
 
