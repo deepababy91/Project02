@@ -8,10 +8,15 @@ Image Modules
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: auto;
   grid-gap:1.5em;
+  @include ipad{
+   grid-template-columns: 1fr 1fr 1fr;
+   grid-template-rows: auto;
+   grid-gap:2em;
+   }
   @include mobile{
-    width:100%;
-    display:flex;
-    flex-flow:row wrap;
+   width:100%;
+   display:flex;
+   flex-flow:row wrap;
   }
   
 }
