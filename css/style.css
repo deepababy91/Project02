@@ -412,8 +412,8 @@ textarea {
 media-queries
 ***************************/
 /*320px/16=20em for mobile*/
-/*1200px/16=75em for desktops*/
 /*min-width:768px and max-width:1024px*/
+/*1200px/16=75em for desktops*/
 /*Base Styles
 ****************************
 ***************************/
@@ -527,6 +527,16 @@ Image Modules
   grid-gap: 1.5em;
 }
 
+@media only screen and (min-width: 48em) and (max-width: 64em) {
+  #outputarea {
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
+    grid-gap: 2em;
+  }
+}
+
 @media only screen and (max-width: 20em) {
   #outputarea {
     width: 100%;
@@ -553,6 +563,12 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+img:hover {
+  opacity: .5;
+  -webkit-transition: .9s;
+  transition: .9s;
 }
 
 @media only screen and (max-width: 20em) {
