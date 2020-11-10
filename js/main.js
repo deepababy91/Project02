@@ -9,7 +9,7 @@ $(document).ready(function () {
 
     $.ajax({
       type: "GET",
-      url: `http://api.giphy.com/v1/gifs/search?api_key=2T1BqAMfHkOdSwlIDsUmWOmnnuAZcNj8&q=${userInput}&limit=20`
+      url: `https://api.giphy.com/v1/gifs/search?api_key=2T1BqAMfHkOdSwlIDsUmWOmnnuAZcNj8&q=${userInput}&limit=20`
     })
       .done(function (res) {
         let giphy = res.data;
