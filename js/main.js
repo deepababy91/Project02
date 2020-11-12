@@ -1,26 +1,27 @@
-
-
+//giphy search using $.get
 
 $(document).ready(function () {
-  $('button').click(() => {
-    //to search without refreshing the page
+  console.log("ready!");
+  $('.fa-search').on('click', () => {
     $('#outputarea').empty();
     let userInput = $('#search').val();
+    $.get(`https://api.giphy.com/v1/gifs/search?api_key=2T1BqAMfHkOdSwlIDsUmWOmnnuAZcNj8&q=${userInput}&limit=30&rating=g`, function (giphyResponse) {
+      console.log(giphyResponse);
+      console.log('giphyData', giphyResponse.data)
+      console.log('giphyData result 0 (1st result)', giphyResponse.data[0]);
+      console.log('giphyData result 0 (1st result) - all images list', giphyResponse.data[0].images);
+      console.log('giphyData result 0 (1st result) - all images list - original image', giphyResponse.data[0].images.original);
+      console.log('giphyData result 0 (1st result) - all images list - original image - url', giphyResponse.data[0].images.original.url);
+      for (let image of giphyResponse.data) {
+        let imgHtml = `<img src=${image.images.original.url} />`
+        $('#outputarea').append(imgHtml);
 
-    $.ajax({
-      type: "GET",
-      url: `https://api.giphy.com/v1/gifs/search?api_key=2T1BqAMfHkOdSwlIDsUmWOmnnuAZcNj8&q=${userInput}&limit=20`
+      }
     })
-      .done(function (res) {
-        let giphy = res.data;
-
-        $.each(giphy, function (i, e) {
-          let gifs = e.images.original.url;
-          console.log("index", i, "element", e.images.original.url)
-          $('#outputarea').append(`<img src="${gifs}" alt="giphy"/>`)
-
-        })
-
-      });
   });
-});
+
+})
+
+
+
+
