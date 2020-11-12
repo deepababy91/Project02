@@ -17,9 +17,12 @@ $(document).ready(function () {
         $('#outputarea').append(imgHtml);
 
       }
-    })
+    
+  }).fail(function(){
+      alert('An error occured');
   });
 
+})
 })
 
 
