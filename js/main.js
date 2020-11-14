@@ -2,14 +2,17 @@
 //using ready()
 $(document).ready(function () {
   console.log("ready!");
+  
+  //click on search icon
   $('.fa-search').on('click', () => {
    
     //using empty() to clear the previous search results and to display only the results for the current search (instead of updating the for loop I used empty())
-       $('#search-results').empty();
+  $('#search-results').empty();
     
     //userInput to take whatever value the user enter in the search bar field
     let userInput = $('#search-field').val();
     console.log(userInput);
+    
     //URL specifying api_key,limit=30,rating=g and userInput
     let url="https://api.giphy.com/v1/gifs/search?api_key=2T1BqAMfHkOdSwlIDsUmWOmnnuAZcNj8&limit=30&rating=g&q=" + userInput;
     
