@@ -79,7 +79,7 @@ body{
      padding-bottom:100px;
    }
  
-@media only screen and (max-width:639px){
+@media screen and (max-width:640px){
  .nav{
      display:flex;
      flex-flow:column wrap;
@@ -131,9 +131,6 @@ body{
      grid-template-columns: 1fr 1fr;
      grid-template-rows: auto;
      grid-gap:2em;
-     width:100%;
-     display:flex;
-     flex-flow:row wrap;
      padding-left:55px;
      padding-right: 65px;
     }
