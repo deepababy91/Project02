@@ -5,10 +5,10 @@ $(document).ready(function () {
   $('.fa-search').on('click', () => {
    
     //using empty() to clear the previous search results and to display only the results for the current search (instead of updating the for loop I used empty())
-       $('#outputarea').empty();
+       $('#search-results').empty();
     
-    //userInput to take whatever value the user enter in the search bar
-    let userInput = $('#search').val();
+    //userInput to take whatever value the user enter in the search bar field
+    let userInput = $('#search-field').val();
     console.log(userInput);
     //URL specifying api_key,limit=30,rating=g and userInput
     let url="https://api.giphy.com/v1/gifs/search?api_key=2T1BqAMfHkOdSwlIDsUmWOmnnuAZcNj8&limit=30&rating=g&q=" + userInput;
@@ -25,7 +25,7 @@ $(document).ready(function () {
       //Displaying GIFs
       for (let image of giphyResponse.data) {
         let imgHtml = `<img src=${image.images.original.url} />`
-        $('#outputarea').append(imgHtml);
+        $('#search-results').append(imgHtml);
       }
      
       //fail function to alert an error message whenever the get request fails
