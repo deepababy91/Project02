@@ -9,7 +9,7 @@ After clicking on the search button, they can see the related gifs returned.
 Search for any word in the search area and the user can see the gifs related to that returned as results.I used Jquery/get to request data from an API , and display images on the screen.Used fail function in Jquery get to alert an error message whenever there is an error in the URL provided.
 Styling done using CSS flexbox and grid.Used css animation for images and navbar links.
 I used media queries to make the page responsive.The page view will be different for mobiles, ipad, laptop,desktop(all the devices).
-Bootstrap used for getting the darkly theme but I customized it using css.
+Bootstrap used for getting the darkly theme but I customized it using css.Also used google font to make the fonts more attractive.
 
 
 4)Technologies used:
