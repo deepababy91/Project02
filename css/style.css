@@ -2,7 +2,7 @@ body{
     width:100vw;
     height:100vh;
  }
-
+/*css  for search input area and search icon together*/
 .searcharea{
     margin-top:35px ;
     display: flex;
@@ -11,7 +11,7 @@ body{
     margin-bottom: 25px;
 }
 
-#search{
+#search-field{
    width: 28%;
    height: 40px;
    border-radius: 5px 0 0 5px;
@@ -75,7 +75,7 @@ body{
   }
  }
 
- #outputarea{
+ #search-results{
      padding-bottom:100px;
    }
  
@@ -87,14 +87,14 @@ body{
      padding: 10px;
      width:100%;
   }
-  #search{
+  #search-field{
      width:40%;
      height:30px;
     }
  .fa-search{
      height:20px;
  }
-  #outputarea{
+  #search-results{
      display:grid;
      grid-template-columns: 1fr;
      grid-template-rows: auto;
@@ -119,14 +119,14 @@ body{
      padding: 10px;
      width:100%;
   }
- #search{
+ #search-field{
      width:40%;
      height:30px;
     }
  .fa-search{
      height:20px;
   }
-  #outputarea{
+  #search-results{
      display:grid;
      grid-template-columns: 1fr 1fr;
      grid-template-rows: auto;
@@ -140,8 +140,9 @@ body{
    }
   }
 
+  /*media query for width 768px and above*/
  @media only screen and (min-width: 768px){
-  #outputarea{
+  #search-results{
      display:grid;
      grid-template-columns: 1fr 1fr 1fr;
      grid-template-rows: auto;
@@ -163,8 +164,9 @@ body{
     }
   }
 
+  /*media query for width 1024px and above*/
  @media only screen and (min-width: 1024px){
-  #outputarea{
+  #search-results{
      display:grid;
      grid-template-columns: 1fr 1fr 1fr 1fr;
      grid-template-rows: auto;
@@ -186,8 +188,9 @@ body{
     }
    }
 
+/*media query for width 1280px and above*/
  @media only screen and (min-width: 1280px){
-   #outputarea{
+   #search-results{
      display:grid;
      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
      grid-template-rows: auto;
