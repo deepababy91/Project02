@@ -31,7 +31,7 @@ $(document).ready(function () {
         $('#search-results').append(imgHtml);
       }
      
-      //fail function to alert an error message whenever the get request fails
+      //fail function to alert an error message whenever the get request fails.Tested it by creating a typo in base url (instead of https://api provide https://pi)
         }).fail(function () {
       alert('Error:Sorry,get request failed');
     
