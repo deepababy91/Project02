@@ -11,7 +11,7 @@ $(document).ready(function () {
     
     //userInput to take whatever value the user enter in the search bar field
     let userInput = $('#search-field').val();
-    console.log(userInput);
+    console.log('Searched word is', userInput);
     
     //URL specifying api_key,limit=30,rating=g and userInput
     let url="https://api.giphy.com/v1/gifs/search?api_key=2T1BqAMfHkOdSwlIDsUmWOmnnuAZcNj8&limit=30&rating=g&q=" + userInput;
